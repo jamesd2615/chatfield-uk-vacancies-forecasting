@@ -1,0 +1,41 @@
+# Python, R, editors
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+.RData
+.Rhistory
+.Rproj.user/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+~$*
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+# External datasets: explicitly approve before publishing
+/data/raw/*
+/data/interim/*
+/data/processed/*
+!/data/raw/.gitkeep
+!/data/interim/.gitkeep
+!/data/processed/.gitkeep
+# Temporary and binary model outputs
+/tmp/
+/temp/
+/logs/
+*.log
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
