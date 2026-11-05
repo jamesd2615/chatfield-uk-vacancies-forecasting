@@ -1,0 +1,14 @@
+\begin{table}[H]\centering\small
+\caption{Sub-sample tests. The post-COVID sample has only 33 observations, so these tests have little power.}\label{tab:stat_sub}
+\resizebox{\textwidth}{!}{\begin{tabular}{lcccccc}\toprule
+ & \multicolumn{4}{c}{ADF (H$_0$: unit root)} & \multicolumn{2}{c}{KPSS (H$_0$: stationary)}\\
+\cmidrule(lr){2-5}\cmidrule(lr){6-7}
+Series & const, AIC & const, BIC & c+trend, AIC & c+trend, BIC & level & trend\\\midrule
+Pre-COVID level (to Dec 2019) & $-$1.40 (0.583) & $-$1.37 (0.598) & $-$1.89 (0.660) & $-$1.73 (0.738) & 0.82 ($\leq$0.01) & 0.45 ($\leq$0.01)\\
+Pre-COVID 1st diff & $-$3.50 (0.008) & $-$4.19 ($<$0.001) & $-$3.55 (0.035) & $-$4.14 (0.006) & 0.30 ($\geq$0.10) & 0.09 ($\geq$0.10)\\
+Post-COVID level (from Jan 2022) & $-$1.05 (0.734) & 0.46 (0.984) & $-$1.99 (0.606) & $-$2.40 (0.382) & 0.74 (0.010) & 0.11 ($\geq$0.10)\\
+Post-COVID 1st diff & $-$3.28 (0.016) & $-$3.03 (0.032) & $-$2.27 (0.452) & $-$3.13 (0.100) & 0.17 ($\geq$0.10) & 0.15 (0.043)\\
+\bottomrule
+\end{tabular}}
+\par\smallskip\footnotesize Each cell: test statistic (p-value). ``AIC''/``BIC'' = rule used to choose the number of augmenting lags. ADF 5\% critical values are about $-2.87$ (constant) and $-3.42$ (constant + trend). KPSS p-values are interpolated and truncated to [0.01, 0.10].
+\end{table}

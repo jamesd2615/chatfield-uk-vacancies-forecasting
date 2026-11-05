@@ -1,0 +1,9 @@
+\begin{table}[H]\centering\small
+\caption{Levels versus log levels. Log-scale AIC/BIC have been converted to the scale of the original data by adding $2\sum_t \log y_t$, so the four rows are directly comparable.}\label{tab:lvslog}
+\begin{tabular}{llrrrrrr}\toprule Scale & Model & Adj.\ AIC & Adj.\ BIC & $\Delta$BIC & LB(12) & LB(24) & ARCH-LM\\\midrule
+Levels & ARIMA(1,1,2) & 2247.4 & 2261.9 & 0.0 & 0.199 & \textbf{0.006} & 0.135\\
+Levels & ARIMA(0,1,2) & 2254.8 & 2265.7 & 3.8 & \textbf{0.008} & \textbf{0.000} & 0.333\\
+Log levels & ARIMA(0,1,2) & 2419.3 & 2430.2 & 168.3 & 0.220 & 0.348 & \textbf{0.000}\\
+Log levels & ARIMA(1,1,2) & 2421.1 & 2435.6 & 173.7 & 0.164 & 0.335 & \textbf{0.000}\\
+\bottomrule\end{tabular}
+\end{table}

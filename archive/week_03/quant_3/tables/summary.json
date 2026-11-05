@@ -1,0 +1,13 @@
+{
+ "n_total": 304,
+ "first": "2001-06",
+ "last": "2026-09",
+ "n_train": 280,
+ "train_end": "2024-09",
+ "n_test": 24,
+ "test_start": "2024-10",
+ "train_min": 343.0,
+ "train_max": 1294.0,
+ "train_min_date": "2020-06",
+ "train_max_date": "2022-06"
+}

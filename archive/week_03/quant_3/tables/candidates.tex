@@ -1,0 +1,18 @@
+\begin{table}[H]\centering\small
+\caption{Candidate ARIMA$(p,1,q)$ specifications on the training sample ($n=280$, 279 differenced observations). $\Delta$ = difference from the best value in the full 50-model grid; bold Ljung--Box p-values are below 0.05.}\label{tab:candidates}
+\resizebox{\textwidth}{!}{\begin{tabular}{lcrrrrrrrrr}\toprule
+Model & $k$ & AIC & AICc & BIC & $\Delta$AIC & $\Delta$BIC & $\hat\sigma$ & LB(6) & LB(12) & LB(24)\\\midrule
+ARIMA(0,1,0) & 1 & 2570.0 & 2570.0 & 2573.6 & 322.6 & 311.7 & 24.12 & \textbf{0.000} & \textbf{0.000} & \textbf{0.000}\\
+ARIMA(0,1,1) & 2 & 2419.1 & 2419.1 & 2426.4 & 171.7 & 164.5 & 18.33 & \textbf{0.000} & \textbf{0.000} & \textbf{0.000}\\
+ARIMA(1,1,1) & 3 & 2332.2 & 2332.3 & 2343.1 & 84.9 & 81.2 & 15.62 & \textbf{0.000} & \textbf{0.000} & \textbf{0.000}\\
+ARIMA(0,1,2) & 3 & 2254.8 & 2254.9 & 2265.7 & 7.4 & 3.8 & 13.55 & \textbf{0.005} & \textbf{0.008} & \textbf{0.000}\\
+ARIMA(1,1,2)$^\star$ & 4 & 2247.4 & 2247.5 & 2261.9 & 0.0 & 0.0 & 13.32 & 0.474 & 0.199 & \textbf{0.006}\\
+ARIMA(2,1,2) & 5 & 2249.2 & 2249.5 & 2267.4 & 1.9 & 5.5 & 13.32 & 0.282 & 0.151 & \textbf{0.005}\\
+ARIMA(0,1,3) & 4 & 2248.0 & 2248.2 & 2262.6 & 0.7 & 0.7 & 13.33 & 0.367 & 0.151 & \textbf{0.003}\\
+ARIMA(1,1,3) & 5 & 2249.0 & 2249.2 & 2267.2 & 1.7 & 5.3 & 13.31 & 0.223 & 0.135 & \textbf{0.007}\\
+ARIMA(1,1,4) & 6 & 2249.6 & 2249.9 & 2271.4 & 2.3 & 9.5 & 13.28 & 0.264 & 0.148 & \textbf{0.009}\\
+ARIMA(1,1,2)$+$drift & 5 & 2249.3 & 2249.6 & 2267.5 & 2.0 & 5.6 & 13.32 & 0.473 & 0.199 & \textbf{0.006}\\
+\bottomrule
+\end{tabular}}
+\par\smallskip\footnotesize $k$ counts all estimated parameters including the innovation variance. LB($m$): Ljung--Box p-value using $m$ lags and $m-p-q$ degrees of freedom. $^\star$ recommended. ARIMA(0,1,0) has no estimated mean, so $k=1$ (the variance) and LB uses no degree-of-freedom correction.
+\end{table}

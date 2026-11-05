@@ -1,0 +1,14 @@
+\begin{table}[H]\centering\small
+\caption{Residual diagnostics for ARIMA(1,1,2) (279 residuals; the first, a diffuse start-up value, is dropped).}\label{tab:diag}
+\begin{tabular}{lrr}\toprule Test & Statistic & p-value\\\midrule
+Ljung--Box, 6 lags (df $=6-3$) & 2.51 & 0.474\\
+Ljung--Box, 12 lags (df $=12-3$) & 12.26 & 0.199\\
+Ljung--Box, 18 lags (df $=18-3$) & 30.39 & \textbf{0.011}\\
+Ljung--Box, 24 lags (df $=24-3$) & 40.51 & \textbf{0.006}\\
+Ljung--Box, 36 lags (df $=36-3$) & 43.32 & 0.108\\
+Ljung--Box on squared residuals, 12 lags & 10.95 & 0.534\\
+Engle ARCH-LM, 6 lags & 9.76 & 0.135\\
+Jarque--Bera, all residuals & 18814.0 & \textbf{0.000}\\
+Jarque--Bera, excluding Mar 2020--Dec 2021 & 6.5 & \textbf{0.039}\\
+\bottomrule\end{tabular}
+\end{table}

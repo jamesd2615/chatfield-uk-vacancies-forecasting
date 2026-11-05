@@ -1,0 +1,15 @@
+\begin{table}[H]\centering\small
+\caption{Unit-root and stationarity tests on the training sample (June 2001 -- September 2024).}\label{tab:stat_main}
+\resizebox{\textwidth}{!}{\begin{tabular}{lcccccc}\toprule
+ & \multicolumn{4}{c}{ADF (H$_0$: unit root)} & \multicolumn{2}{c}{KPSS (H$_0$: stationary)}\\
+\cmidrule(lr){2-5}\cmidrule(lr){6-7}
+Series & const, AIC & const, BIC & c+trend, AIC & c+trend, BIC & level & trend\\\midrule
+Level & $-$1.37 (0.595) & $-$2.89 (0.046) & $-$2.38 (0.388) & $-$3.85 (0.014) & 1.26 ($\leq$0.01) & 0.31 ($\leq$0.01)\\
+1st difference & $-$5.67 ($<$0.001) & $-$4.00 (0.001) & $-$5.67 ($<$0.001) & $-$3.98 (0.009) & 0.06 ($\geq$0.10) & 0.04 ($\geq$0.10)\\
+2nd difference & $-$5.43 ($<$0.001) & $-$11.11 ($<$0.001) & $-$5.43 ($<$0.001) & $-$11.10 ($<$0.001) & 0.11 ($\geq$0.10) & 0.10 ($\geq$0.10)\\
+log~Level & $-$2.46 (0.126) & $-$2.26 (0.184) & $-$3.46 (0.044) & $-$2.93 (0.152) & 1.18 ($\leq$0.01) & 0.31 ($\leq$0.01)\\
+log~1st difference & $-$4.65 ($<$0.001) & $-$6.21 ($<$0.001) & $-$4.64 ($<$0.001) & $-$6.19 ($<$0.001) & 0.07 ($\geq$0.10) & 0.04 ($\geq$0.10)\\
+\bottomrule
+\end{tabular}}
+\par\smallskip\footnotesize Each cell: test statistic (p-value). ``AIC''/``BIC'' = rule used to choose the number of augmenting lags. ADF 5\% critical values are about $-2.87$ (constant) and $-3.42$ (constant + trend). KPSS p-values are interpolated and truncated to [0.01, 0.10].
+\end{table}
